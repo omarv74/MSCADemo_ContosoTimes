@@ -1,0 +1,7 @@
+C:\Users\rickalba\OneDrive - Microsoft\Training\SDL\v3.3\Labs\Module2\Solution\Contoso Times\Contoso Times\bin\Contoso Times.dll.config
+C:\Users\rickalba\OneDrive - Microsoft\Training\SDL\v3.3\Labs\Module2\Solution\Contoso Times\Contoso Times\bin\Contoso Times.dll
+C:\Users\rickalba\OneDrive - Microsoft\Training\SDL\v3.3\Labs\Module2\Solution\Contoso Times\Contoso Times\bin\Contoso Times.pdb
+C:\Users\rickalba\OneDrive - Microsoft\Training\SDL\v3.3\Labs\Module2\Solution\Contoso Times\Contoso Times\obj\Debug\Contoso Times.csproj.CoreCompileInputs.cache
+C:\Users\rickalba\OneDrive - Microsoft\Training\SDL\v3.3\Labs\Module2\Solution\Contoso Times\Contoso Times\obj\Debug\Contoso Times.dll
+C:\Users\rickalba\OneDrive - Microsoft\Training\SDL\v3.3\Labs\Module2\Solution\Contoso Times\Contoso Times\obj\Debug\Contoso Times.pdb
+C:\Users\rickalba\OneDrive - Microsoft\Training\SDL\v3.3\Labs\Module2\Solution\Contoso Times\Contoso Times\obj\Debug\Contoso Times.csprojAssemblyReference.cache

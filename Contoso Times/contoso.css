@@ -1,0 +1,88 @@
+body{margin:0px;font:.7em "trebuchet MS", tahoma, arial, helvetica, sans-serif;color:#000000;}
+
+a {color:#CC3333;text-decoration:none}
+a:hover {text-decoration:underline}
+a:visited {color:#993333}
+a:active {color:#64A0D2}
+
+form{margin:0px;padding:0px}
+fieldset{margin:10px 0px 20px 0px;padding:0px 10px 10px 10px}
+legend {margin-bottom:15px;padding:0px 10px 5px 5px;color:#999999;font-size:1em;}
+
+/* CREATE SEMATICALY CORRECT OUTLINE IN THE SOURCE WITH THE 
+   H1 through H4 HEADINGS, THEN CONTROL THEIR STYLE BELOW */
+
+h1, h4{display:inline}
+h1{font-weight:normal;font-size:1em}
+h1 a, h1 a:visited{color:#666666}
+
+#home h2, #home h4{display:inline;font-size:1.3em}
+#home h3{display:inline;font-size:1.7em}
+
+#loginregister h2{display:inline;font-size:1.7em}
+
+#articles h2, #article h2{margin:-5px 0px 20px 0px;padding-bottom:6px;font-size:2em;border-bottom:1px solid #000000}
+#articles h3{margin:0px;font-size:1.3em}
+
+#article h3{margin-bottom:6px;font-size:1.7em}
+#article h4{font-size:1.3em}
+
+#article p, #articles p{text-align:justify}
+#articles p{margin:5px 0px;padding:0px}
+
+#editlist h2, #editarticle h2{font-size:1.7em}
+
+/* START IDs */
+
+#topdate{color:#666666;text-transform: capitalize;height:25px;}
+
+#breadcrumbs{color:#000000;background-color:#B3B3B3;margin-top:3px;margin-bottom:3px;height:22px}
+#breadcrumbs a{color:#FFFFFF}
+
+#home ul{margin-top:0px; margin-left:0px;padding-left:15px}
+#home li{margin:10px 0px 0px 0px;list-style: url(images/bull_1.gif)}
+
+#leftnav table{width:100%}
+#leftnav td{padding:3px 0px 3px 6px;background:#E4E4E4;border-bottom:2px inset #FFFFFF}
+#leftnav td a{color:#CC3333;padding:4px 0px 4px 14px}
+#leftnav td.leftnavactive{background:url(images/bg_leftnavactive.gif) no-repeat}
+#leftnav td.leftnavhighlight{background:none;width:1px;}
+
+#editlist, #editarticle{margin:13px 0px}
+#editlist th{background:#ECECEC}
+
+#footer{
+	margin-left:auto;margin-right:auto;margin-bottom:10px;padding-top:9px;
+	width:763px;height:41px;
+	color:#787878;background:#ECECEC;
+	border:1px solid #D3D3D3;
+	text-align: center;
+}
+
+/* START CLASSES */
+
+.homephotos{height:84px;padding-left:6px;vertical-align:bottom;padding-bottom:2px;border:1px solid #B2B2B2}
+.homephotosnewssports{width:187px}
+.homephotosmembers{width:176px}
+
+.local{background: url(images/home_local.jpg) no-repeat}
+.national{background: url(images/home_national.jpg) no-repeat}
+.world{background: url(images/home_world.jpg) no-repeat}
+.baseball{background: url(images/home_baseball.jpg) no-repeat}
+.basketball{background: url(images/home_basketball.jpg) no-repeat}
+.football{background: url(images/home_football.jpg) no-repeat}
+.travel{background: url(images/home_travel.jpg) no-repeat}
+.entertainment{background: url(images/home_entertainment.jpg) no-repeat}
+.technology{background: url(images/home_technology.jpg) no-repeat}
+
+.editfield{width:620px;font-family:"trebuchet MS", tahoma, arial, helvetica, sans-serif;}
+.edittitle{font-weight:bold;font-size:1.7em}
+.editsubtitle{font-weight:bold;font-size:1.2em} 
+
+.readmore{width:65px;margin-top:7px;padding:0px 3px;font-size:.9em;background:#EDEDED;border:1px solid #D3D3D3}
+
+.col_category{width:12%;text-align:left}
+.col_actions{width:18%;text-align:center}
+.col_title{width:70%;text-align:left}
+
+.hidden{display:none}

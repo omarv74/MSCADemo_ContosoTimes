@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+  <siteMapNode title="Home" url="Default.aspx">
+    <siteMapNode title="News" roles="*" description="What's happening here and around the world">
+      <siteMapNode title="Local" url="~/Summary.aspx?CategoryID=0" description="Local news" />
+      <siteMapNode title="National" url="~/Summary.aspx?CategoryID=1" description="National news" />
+      <siteMapNode title="World" url="~/Summary.aspx?CategoryID=2" description="World news" />
+	</siteMapNode>
+    <siteMapNode title="Sports" roles="*" description="What's happening in the world of sports">
+      <siteMapNode title="Baseball" url="~/Summary.aspx?CategoryID=3" description="Baseball news" />
+      <siteMapNode title="Basketball" url="~/Summary.aspx?CategoryID=4" description="Basketball news" />
+      <siteMapNode title="Football" url="~/Summary.aspx?CategoryID=5" description="Football news" />
+    </siteMapNode>
+    <siteMapNode title="Members Only"  description="Premium content for paid subscribers">
+      <siteMapNode title="Travel" url="~/Summary.aspx?CategoryID=6" description="Travel news" />
+      <siteMapNode title="Entertainment" url="~/Summary.aspx?CategoryID=7" description="Entertainment news" />
+      <siteMapNode title="Technology" url="~/Summary.aspx?CategoryID=8" description="Tech news" />
+	</siteMapNode>
+  </siteMapNode>
+</siteMap>

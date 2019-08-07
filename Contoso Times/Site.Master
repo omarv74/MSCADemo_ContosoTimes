@@ -1,0 +1,145 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Contoso_Times.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="generator" content="Microsoft Visual Studio, see http://msdn.microsoft.com/vstudio/" />
+    <meta name="Description" content="Contoso Times Home Page" />
+    <meta name="Keywords" content="Contoso Times, news, sports news, travel news, entertainment news, technology news" />
+    <meta name="copyright" content="Copyright (c) 2005 Contoso Times. All rights reserved." />
+    <link rel="SHORTCUT ICON" href="favicon.ico" />
+    <link href="contoso.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form runat="server">
+<!-- 
+
+BEGIN TOP DATE TABLE 
+
+-->
+<table width="765" border="0" align="center" cellpadding="0" cellspacing="0" id="topdate">
+  <tr>
+    <td>
+        <a href="#startheader"><asp:Image ID="Image1" Runat="server" ImageUrl="~/Images/spacer.gif" AlternateText="Skip repetitive date and title" Width="1" Height="1" BorderStyle="None" /></a>
+        UPDATED <asp:Label ID="Label1" Runat="server"></asp:Label>
+    </td>
+    <td align="right"><h1><asp:HyperLink ID="HyperLink1" Runat="server" NavigateUrl="~/Default.aspx">CONTOSO TIMES</asp:HyperLink>, SINCE 2005</h1></td>
+  </tr>
+</table>
+<!-- 
+
+BEGIN BANNER 
+
+-->
+<table width="765" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+        <a name="startheader" id="startheader"></a>
+        <asp:LoginView ID="LoginView1" Runat="server">
+            <AnonymousTemplate>
+                <asp:HyperLink ID="HyperLink2" Runat="server" NavigateUrl="~/Register.aspx" ImageUrl="~/Images/banner_ad.gif" Width="104" Height="83" BorderStyle="None" />
+            </AnonymousTemplate>
+            <LoggedInTemplate>
+                <asp:HyperLink ID="HyperLink3" Runat="server" NavigateUrl="~/Register.aspx" ImageUrl="~/Images/banner_ad-none.gif" Width="104" Height="83" BorderStyle="None" />
+            </LoggedInTemplate>
+        </asp:LoginView>
+    </td>
+    <td>
+        <asp:HyperLink ID="HyperLInk4" Runat="server" NavigateUrl="~/Default.aspx" ImageUrl="~/Images/banner_logo.gif" Width="661" Height="83" BorderStyle="None" />
+    </td>
+  </tr>
+</table>
+<!-- 
+
+BEGIN TOP BREADCRUMBS 
+
+-->
+<table width="765" border="0" align="center" cellpadding="0" cellspacing="0" id="breadcrumbs">
+  <tr>
+    <asp:LoginView ID="LoginView2" Runat="server">
+        <AnonymousTemplate>
+            <td width="700" style="padding-left:6px">
+                <asp:SiteMapPath ID="SiteMapPath1" Runat="server"></asp:SiteMapPath>
+            </td>
+            <td width="2" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="63" align="center">
+                <asp:LoginStatus ID="LoginStatus2" Runat="server" LogoutAction="Redirect" LogoutPageUrl="~/Default.aspx" />
+            </td>
+        </AnonymousTemplate>
+        <LoggedInTemplate>
+            <td width="600" style="padding-left:6px">
+                <asp:SiteMapPath ID="SiteMapPath2" Runat="server"></asp:SiteMapPath>
+            </td>
+            <td width="2" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="98" align="center">
+                <asp:HyperLink ID="HyperLink5" Runat="server" NavigateUrl="~/MembersOnly/Recent.aspx">Recent Items</asp:HyperLink>
+            </td>
+            <td width="2" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="98" align="center">
+                 <asp:LoginName ID="LoginName1" runat="server" />
+            </td>           
+            <td width="2" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="63" align="center">                
+                <asp:LoginStatus ID="LoginStatus4" Runat="server" LogoutAction="Redirect" LogoutPageUrl="~/Default.aspx" />
+            </td>
+        </LoggedInTemplate>
+      </asp:LoginView></tr>
+</table>
+<!-- 
+
+BEGIN BODY
+
+-->
+<table width="765" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="176" valign="top" bgcolor="#ECECEC" >
+    <!-- 
+	
+	BEGIN LEFT NAV 
+	
+	-->
+        <a href="#startcontent"><asp:Image ID="Image2" Runat="server" ImageUrl="~/Images/spacer.gif" AlternateText="Skip repetitive navigation" Width="1" Height="1" BorderStyle="None" /></a>
+        <div id="leftnav">
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" Runat="server" ShowStartingNode="False" />
+            <asp:TreeView ID="TreeView1" Runat="server" DataSourceID="SiteMapDataSource1" ShowExpandCollapse="False" NodeIndent="0" OnTreeNodeDataBound="TreeView1_TreeNodeDataBound" Width="100%">
+                <NodeStyle Width="100%" />
+            </asp:TreeView>
+        </div>
+    </td>
+    <td><asp:Image ID="Image3" Runat="server" ImageUrl="~/Images/spacer.gif" Width="8" /></td>
+    <td width="579" valign="top"><asp:Image ID="Image4" Runat="server" ImageUrl="~/Images/spacer.gif" Width="579" Height="13" />
+    <!-- 
+    
+	PLACEHOLDER FOR BODY CONTENT 
+
+	-->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" Runat="server"></asp:ContentPlaceHolder>
+    </td>
+  </tr>
+</table>
+<!-- 
+
+BEGIN BOTTOM BREADCRUMBS
+
+-->
+<table width="765" border="0" align="center" cellpadding="0" cellspacing="0" id="breadcrumbs">
+  <tr>
+    <td style="padding-left:6px">
+        <asp:SiteMapPath ID="SiteMapPath4" Runat="server">
+        </asp:SiteMapPath>
+    </td>
+  </tr>
+</table>
+<!-- 
+
+BEGIN FOOTER
+
+-->
+<div id="footer">&copy; 2005 Contoso Times. All rights reserved <br />
+  <a href="#">contact us</a> | <a href="#">submit an article</a></div>
+</form>
+</body>
+</html>
